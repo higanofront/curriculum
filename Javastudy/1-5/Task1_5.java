@@ -20,8 +20,8 @@ public class Task1_5 {
       String[] fruits = {"みかん", "りんご", "ぶどう", "メロン"};
 
         // ② for文を使って①で作成した配列を出力しなさい。
-      for(String fruit: fruits) {
-        System.out.println(fruit);
+      for(int i = 0; i < fruits.length; i++) {
+        System.out.println(fruits);
       }
 
       // ③ 以下のwhile文の処理について、何をしているのかコメントを記入してください。
@@ -46,23 +46,15 @@ public class Task1_5 {
       *     8 || 8 | 16 | 24 | 32 | 40 | 48 | 56 | 64 | 72 |
       *     9 || 9 | 18 | 27 | 36 | 45 | 54 | 63 | 72 | 81 |
       */
-      Map<Integer, List<Integer>> mulutiMaps = new HashMap<>();
-      mulutiMaps.put(1, Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9));
-      mulutiMaps.put(2, Arrays.asList(2, 4, 6, 8, 10, 12, 14, 16, 18));
-      mulutiMaps.put(3, Arrays.asList(3, 6, 9, 12, 15, 18, 21, 24, 27));
-      mulutiMaps.put(4, Arrays.asList(4, 8, 12, 16, 20, 24, 28, 32, 36));
-      mulutiMaps.put(5, Arrays.asList(5, 10, 15, 20, 25, 30, 35, 40, 45));
-      mulutiMaps.put(6, Arrays.asList(6, 12, 18, 24, 30, 36, 42, 48, 54));
-      mulutiMaps.put(7, Arrays.asList(7, 14, 21, 28, 35, 42, 49, 56, 63));
-      mulutiMaps.put(8, Arrays.asList(8, 16, 24, 32, 40, 48, 56, 64, 72));
-      mulutiMaps.put(9, Arrays.asList(9, 18, 27, 36, 45, 54, 63, 72, 81));
 
-      for (Map.Entry<Integer, List<Integer>> mulutiMap : mulutiMaps.entrySet()) {
-        System.out.print(mulutiMap.getKey() + " || ");
-        for(Integer list: mulutiMap.getValue()) {
-          System.out.print(list + " | ");
+      for (int a = 1; a <= 9; a++) { 
+        for (int b = 1; b <= 9; b++) { 
+          if(b == 1) {
+            System.out.print(a + "||");
+          }
+          System.out.print(a * b + "|");
         }
-        System.out.println();
-      }
+        System.out.println(); 
+     }
   }
 }
