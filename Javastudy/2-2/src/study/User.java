@@ -22,8 +22,8 @@ class User {
     // メソッド名:「printAccountInfo」
 
     protected void printAccountInfo() {
-        System.out.println("ユーザー名は" + this.userName);
-        System.out.println("IDは" + this.id);
+        System.out.println("ユーザー名は、" + this.userName);
+        System.out.println("IDは、" + this.id);
         System.out.println("パスワードは" + this.password);
     }
 }
