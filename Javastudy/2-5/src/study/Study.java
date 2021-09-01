@@ -1,6 +1,6 @@
 package study;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map.Entry;
@@ -26,11 +26,15 @@ public class Study {
 
         // ① 定数を全て使って、String型のListを記述してください。
 
-        List<String> shohinList = Arrays.asList(SHOP_SHOHIN_00, SHOP_SHOHIN_01, SHOP_SHOHIN_02, SHOP_SHOHIN_03);
-
+        List<String> shohinList = new ArrayList<String>();
+        shohinList.add(SHOP_SHOHIN_00);
+        shohinList.add(SHOP_SHOHIN_01);
+        shohinList.add(SHOP_SHOHIN_02);
+        shohinList.add(SHOP_SHOHIN_03);
         // ② 以下の「shopMap.put(shohinList.get(1), 180);」の処理について、コメントを記述してください。
         /*
-         * [変数shopMapへマップを代入、その後、マップshopMapへ要素の追加を行っている]
+         * [変数shopMapへマップを代入、その後、マップshopMapへ要素の追加を行っている
+         * 具体的には、キーにshohinListのインデックス0の値を、バリューに125を追加]
          *
          */
         LinkedHashMap<String, Integer> shopMap = new LinkedHashMap<String, Integer>();
