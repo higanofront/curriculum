@@ -1,3 +1,4 @@
+package curriculum.Javastudy.Check1;
 /**
  * バブルソート
  * チェックテスト-Java1章
