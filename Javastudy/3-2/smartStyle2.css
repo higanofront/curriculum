@@ -41,13 +41,18 @@
 
 
 @media screen and ( max-width:479px) {
-  
+
+  .clearfix::after {
+    content: none;
+  }
+
   .box-1 {
     width: 150px;
   }
 
   .box-2 {
     width: 150px;
+    height: 150px;
     float: none;
   }
   
@@ -76,9 +81,11 @@
   
   .box-6 {
     width: 150px;
+    background: #d98d30;
   }
   
   .box-7 {
     width: 150px;
+    background: #8c2727;
   }
 }

@@ -26,7 +26,7 @@
 .wrap-2 {
   height: 150px;
   width: 150px;
-  float: left;
+  float: right;
 }
 
 .box-3 {
@@ -45,7 +45,7 @@
   background: #ff9e6b;
   height: 150px;
   width: 100px;
-  float: left;
+  float: right;
 }
 
 .box-6 {
